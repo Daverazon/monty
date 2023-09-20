@@ -146,3 +146,7 @@ julien@ubuntu:~/monty$ ./monty bytecodes/00.m
 1
 julien@ubuntu:~/monty$
 ```
+
+
+# Author
+(Mr./Dr. K)[https://github.com/Daverazon]
