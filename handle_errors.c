@@ -35,7 +35,7 @@ int usage_error(void)
  * @filename: Neme of file failed to open
  * Return: always returns EXIT_FAILURE
  */
-int fd_open_error(char *filename)
+int f_open_error(char *filename)
 {
 	fprintf(stderr, "Error: Can't open file %s\n", filename);
 	return (EXIT_FAILURE);
