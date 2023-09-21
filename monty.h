@@ -52,6 +52,8 @@ unsigned int token_arr_len(void);
 /*ERRORS*/
 int malloc_error(void);
 int no_interror(unsigned int lnumber);
+int usage_error(void);
+int fd_open_error(char *filename);
 
 /*FUNCTIONS*/
 void push(stack_t **top, unsigned int lnumber);
