@@ -23,7 +23,7 @@ void push(stack_t **top, unsigned int lnumber)
 		return;
 	}
 
-	for (i = 0: op_token[1][i]; i++)
+	for (i = 0; op_token[1][i]; i++)
 	{
 		if (op_token[1][i] == 'i' && i == 0)
 			continue;
@@ -57,7 +57,7 @@ void push(stack_t **top, unsigned int lnumber)
 
 
 /**
- * pall - prints all the values on the stack, starting from the top of the stack
+ * pall - print all the values on the stack, starting from the top of the stack
  * @top: address of pointer to tail of a stack_s doubly linked list stack
  * @lnumber: current working line number of a monty bytecode file
  */
@@ -80,10 +80,10 @@ void pall(stack_t **top, unsigned int lnumber)
  */
 void pint(stack_t **stack, unsigned int lnumber)
 {
-	if ((*stack)->next = NULL)
+	if ((*stack)->next == NULL)
 	{
 		set_operror(pint_error(lnumber));
-		return
+		return;
 	}
 	printf("%d\n", (*stack)->next->n);
 }
@@ -117,6 +117,7 @@ void pop(stack_t **stack, unsigned int lnumber)
 void swap(stack_t **stack, unsigned int lnumber)
 {
 	stack_t *tmp;
+
 	if ((*stack)->next == NULL || (*stack)->next->next == NULL)
 	{
 		set_operror(short_stack_error(lnumber, "swap"));
