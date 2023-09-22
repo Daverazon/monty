@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * otl - Rotates the top value of a stack_t linked list to the bottom.
+ * rotl - Rotates the top value of a stack_t linked list to the bottom.
  * @stack: A pointer to the top mode node of a stack_t linked list.
  * @lnumber: The current working line number of a Monty bytecodes file.
  */
@@ -56,7 +56,7 @@ void rotr(stack_t **stack, unsigned int lnumber)
  * @stack: A pointer to the top mode node of a stack_t linked list.
  * @lnumber: The current working line number of a Monty bytecodes file.
  */
-void monty_stack(stack_t **stack, unsigned int lnumber)
+void stack(stack_t **stack, unsigned int lnumber)
 {
 	(*stack)->n = STACK;
 	(void)lnumber;
