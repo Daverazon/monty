@@ -78,7 +78,7 @@ void swap(stack_t **stack, unsigned int lnumber);
 void add(stack_t **stack, unsigned int lnumber);
 void nop(stack_t **stack, unsigned int lnumber);
 void sub(stack_t **stack, unsigned int lnumber);
-void div(stack_t **stack, unsigned int lnumber);
+void my_div(stack_t **stack, unsigned int lnumber);
 void mul(stack_t **stack, unsigned int lnumber);
 void mod(stack_t **stack, unsigned int lnumber);
 void pchar(stack_t **stack, unsigned int lnumber);
