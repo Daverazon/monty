@@ -50,7 +50,7 @@ void sub(stack_t **stack, unsigned int lnumber)
  * Description: The result is stored in the second value node
  *              from the top and the top value is removed.
  */
-void div(stack_t **stack, unsigned int lnumber)
+void my_div(stack_t **stack, unsigned int lnumber)
 {
 	if ((*stack)->next == NULL || (*stack)->next->next == NULL)
 	{
