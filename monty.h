@@ -53,6 +53,7 @@ void free_tokens(void);
 int run_monty(FILE *script_fd);
 
 /*CUSTOM LIBRARY FUNCTIONS*/
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 char **strtow(char *str, char *delims);
 char *get_int(int n);
 
