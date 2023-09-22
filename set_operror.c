@@ -31,6 +31,6 @@ void set_operror(int error_code)
 	}
 	new_token[i++] = exit_str;
 	new_token[i] = NULL;
-	free(op_token)
+	free(op_token);
 	op_token = new_token;
 }
