@@ -35,7 +35,7 @@ void push(stack_t **top, unsigned int lnumber)
 	}
 	new->n = atoi(op_token[1]);
 
-	if (check_mode(*stop) == STACK)/*STACK mode insert at front*/
+	if (check_mode(*top) == STACK)/*STACK mode insert at front*/
 	{
 		tmp = (*top)->next;
 		new->prev = *top;
