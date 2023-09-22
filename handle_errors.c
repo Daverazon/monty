@@ -27,7 +27,7 @@ int malloc_error(void)
  */
 int usage_error(void)
 {
-	fprint(stderr, "USAGE: monty file\n");
+	fprintf(stderr, "USAGE: monty file\n");
 	return (EXIT_FAILURE);
 }
 /**
@@ -48,6 +48,6 @@ int f_open_error(char *filename)
  */
 int unknown_operror(char *opcode, unsigned int lnumber)
 {
-	fprint(stderr, "L%u: unknown instruction %s\n", lnumber, opcode);
+	fprintf(stderr, "L%u: unknown instruction %s\n", lnumber, opcode);
 	return (EXIT_FAILURE);
 }
