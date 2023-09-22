@@ -70,7 +70,7 @@ void (*get_op_func(char *opcode))(stack_t **, unsigned int)
 		{"add", add},
 		{"nop", nop},
 		{"sub", sub},
-		{"div", div},
+		{"div", my_div},
 		{"mul", mul},
 		{"mod", mod},
 		{"pchar", pchar},
@@ -127,7 +127,7 @@ int run_monty(FILE *script_fd)
 		if (op_func == NULL)
 		{
 			free_stack(&stack);
-			exit_status = unknown_op_error(op_token[0], lnumber);
+			exit_status = unknown_operror(op_token[0], lnumber);
 			free_tokens();
 			break;
 		}
